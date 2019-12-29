@@ -26,7 +26,22 @@
         
         @media only screen and (max-width: $bp-largest) {
                 align-self: center;              
-                width: 20rem;
+                width: 40rem;
+                margin: 1rem;
+        }
+        @media only screen and (max-width: $bp-large) {
+                align-self: center;              
+                width: 40rem;
+                margin: 1rem;
+        }
+        @media only screen and (max-width: $bp-medium) {
+                align-self: center;              
+                width: 30rem;
+                margin: 1rem;
+        }
+        @media only screen and (max-width: $bp-small) {
+                align-self: center;              
+                width: 30rem;
                 margin: 1rem;
         }
     }
@@ -45,6 +60,26 @@
             //    height: 90%;
                 align-self: center;
                 width: 23em;
+                margin: 1rem;
+        }
+        @media only screen and (max-width: $bp-largest) {
+            align-self: center;              
+            width: 43rem;
+                margin: 1rem;
+        }
+        @media only screen and (max-width: $bp-large) {
+                align-self: center;              
+                width: 43rem;
+                margin: 1rem;
+        }
+        @media only screen and (max-width: $bp-medium) {
+                align-self: center;              
+                width: 33rem;
+                margin: 1rem;
+        }
+        @media only screen and (max-width: $bp-small) {
+                align-self: center;              
+                width: 33rem;
                 margin: 1rem;
         }
     }

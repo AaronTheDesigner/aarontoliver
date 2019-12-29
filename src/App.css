@@ -17,7 +17,7 @@ html {
   @media only screen and (max-width: 50em) {
     html {
       font-size: 30%; } }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 37.5em) {
     html {
       font-size: 20%; } }
 
@@ -76,7 +76,22 @@ h6 {
     @media only screen and (max-width: 75em) {
       .logo__first {
         align-self: center;
-        width: 20rem;
+        width: 40rem;
+        margin: 1rem; } }
+    @media only screen and (max-width: 62.5em) {
+      .logo__first {
+        align-self: center;
+        width: 40rem;
+        margin: 1rem; } }
+    @media only screen and (max-width: 50em) {
+      .logo__first {
+        align-self: center;
+        width: 30rem;
+        margin: 1rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .logo__first {
+        align-self: center;
+        width: 30rem;
         margin: 1rem; } }
   .logo__last {
     transform: translateX(100%);
@@ -90,6 +105,26 @@ h6 {
       .logo__last {
         align-self: center;
         width: 23em;
+        margin: 1rem; } }
+    @media only screen and (max-width: 75em) {
+      .logo__last {
+        align-self: center;
+        width: 43rem;
+        margin: 1rem; } }
+    @media only screen and (max-width: 62.5em) {
+      .logo__last {
+        align-self: center;
+        width: 43rem;
+        margin: 1rem; } }
+    @media only screen and (max-width: 50em) {
+      .logo__last {
+        align-self: center;
+        width: 33rem;
+        margin: 1rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .logo__last {
+        align-self: center;
+        width: 33rem;
         margin: 1rem; } }
 
 @keyframes name-first {
