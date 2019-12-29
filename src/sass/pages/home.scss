@@ -1,4 +1,23 @@
 .section-header {
     height: 100vh;
     background-color: $color-bg-grey;
+    display: grid;
+    grid-template-rows: 100px 320px 400px 1fr;
+    grid-template-columns: 1fr 1100px 1fr; 
+
+    @media only screen and (max-width: $bp-largest) {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1rem 1fr 1rem;
+    }
+    
+    .soon {
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+
+        color: $color-bg-dark;
+        text-align: center;
+        @media only screen and (max-width: $bp-largest) {
+            font-size: 90%;
+        }
+    }
 }

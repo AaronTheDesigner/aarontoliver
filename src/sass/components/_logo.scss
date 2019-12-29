@@ -1,0 +1,237 @@
+.logo {
+
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+
+    display: flex;
+    justify-content: space-evenly;  
+    align-items: center;
+
+    @media only screen and (max-width: $bp-largest) {
+
+        align-content: space-around;
+        
+    }
+    
+    
+
+    &__first {
+        transform: translateX(-100%);
+        opacity: 0;
+        animation-name: name-first;
+        animation-delay: 2s;
+        animation-duration: .9s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+        
+        @media only screen and (max-width: $bp-largest) {
+                align-self: center;              
+                width: 20rem;
+                margin: 1rem;
+        }
+    }
+
+    &__last {
+        transform: translateX(100%);
+        opacity: 0;
+        animation-name: name-last;
+        animation-delay: 2s;
+        animation-duration: .9s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+
+        @media only screen and (max-width: $bp-largest) {
+            //    width: 90%;
+            //    height: 90%;
+                align-self: center;
+                width: 23em;
+                margin: 1rem;
+        }
+    }
+
+    @keyframes name-first {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0%);
+            opacity: 1
+        }
+    }
+
+
+    @keyframes name-last {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0%);
+            opacity: 1
+        }
+    }
+
+    &__center {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @media only screen and (max-width: $bp-large) {
+            width: 20rem;
+        }        
+        @media only screen and (max-width: $bp-medium) {
+            width: 20rem;
+        }        
+        
+
+        &--main {
+            
+            margin: 19.5px;
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation-name: dash;
+            animation-delay: 0s;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-out;
+            //filter: drop-shadow( 0 20px 5px rgb(180, 180, 180));
+            @media only screen and (max-width: $bp-largest) {
+                //width: 10rem;
+                height: 20rem;
+                
+                }
+            
+            
+            &--1 {
+                stroke: #AB5050;
+                fill: transparent;
+                animation-name: reveal-t;
+                animation-delay: 1s;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-out;
+
+                @keyframes reveal-t {
+                    from {
+                        fill: transparent;
+                    }
+
+                    to {
+                        fill:#AB5050;
+                    }
+                }
+               
+            }
+
+            &--2 {
+                stroke: #BE9F7D;
+                fill: transparent;
+                animation-name: reveal-a;
+                animation-delay: 1s;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-out;
+
+                @keyframes reveal-a {
+                    from {
+                        fill: transparent;
+                    }
+
+                    to {
+                        fill: #BE9F7D;
+                    }
+                }
+            }
+
+            &--3 {
+                fill: transparent;
+            }
+
+            &--4 {
+                stroke: #77A7B6;
+                fill: transparent;
+                animation-name: reveal-dot;
+                animation-delay: 1s;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-out;
+
+                @keyframes reveal-dot {
+                    from {
+                        fill: transparent;
+                    }
+
+                    to {
+                        fill: #77A7B6;
+                    }
+                }
+                
+            }
+
+            @keyframes dash {
+                0% {
+                    stroke-dashoffset: 1000;
+                    
+                    
+                }
+
+                25% {
+                    stroke-dashoffset: 0;
+                    
+                }
+
+                50% {
+                    stroke-dashoffset: 1000;
+                    
+                }
+
+                75% {
+                    filter: drop-shadow( 0 0px 0px rgb(180, 180, 180));
+
+                }
+
+                100% {
+                    
+                    filter: drop-shadow( 0 20px 5px rgb(180, 180, 180));
+                }
+
+            }
+            
+        }
+
+        &--pro {
+            transform: translateY(400%);
+            opacity: 0;
+            animation-name: pro-up;
+            animation-delay: 2s;
+            animation-duration: .9s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-out;
+
+            @keyframes pro-up {
+                from {
+                    transform: translateY(400%);
+                    opacity: 0;
+                }
+
+                to {
+                    transform: translateY(0%);
+                    opacity: 1;
+                }
+            }
+
+            @media only screen and (max-width: $bp-largest) {
+                //width: 10rem;
+                width: 20rem;
+                }
+        }
+
+        @media only screen and (max-width: $bp-largest) {
+            //width: 10rem;
+            order: -1;
+            }
+    }
+}
