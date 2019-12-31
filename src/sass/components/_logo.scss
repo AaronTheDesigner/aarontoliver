@@ -46,68 +46,10 @@
         }
     }
 
-    &__last {
-        transform: translateX(100%);
-        opacity: 0;
-        animation-name: name-last;
-        animation-delay: 2s;
-        animation-duration: .9s;
-        animation-fill-mode: forwards;
-        animation-timing-function: ease-out;
-
-        @media only screen and (max-width: $bp-largest) {
-            //    width: 90%;
-            //    height: 90%;
-                align-self: center;
-                width: 23em;
-                margin: 1rem;
-        }
-        @media only screen and (max-width: $bp-largest) {
-            align-self: center;              
-            width: 43rem;
-                margin: 1rem;
-        }
-        @media only screen and (max-width: $bp-large) {
-                align-self: center;              
-                width: 43rem;
-                margin: 1rem;
-        }
-        @media only screen and (max-width: $bp-medium) {
-                align-self: center;              
-                width: 33rem;
-                margin: 1rem;
-        }
-        @media only screen and (max-width: $bp-small) {
-                align-self: center;              
-                width: 33rem;
-                margin: 1rem;
-        }
-    }
-
-    @keyframes name-first {
-        from {
-            transform: translateX(-100%);
-            opacity: 0;
-        }
-
-        to {
-            transform: translateX(0%);
-            opacity: 1
-        }
-    }
+    
 
 
-    @keyframes name-last {
-        from {
-            transform: translateX(100%);
-            opacity: 0;
-        }
 
-        to {
-            transform: translateX(0%);
-            opacity: 1
-        }
-    }
 
     &__center {
         display: flex;
@@ -119,7 +61,7 @@
         }        
         @media only screen and (max-width: $bp-medium) {
             width: 20rem;
-        }        
+        }     
         
 
         &--main {

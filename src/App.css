@@ -20,12 +20,6 @@ html {
   @media only screen and (max-width: 37.5em) {
     html {
       font-size: 20%; } }
-  @media only screen and (max-width: 20.5em) {
-    html {
-      font-size: 20%; } }
-  @media only screen and (max-width: 15em) {
-    html {
-      font-size: 10%; } }
 
 p {
   font-size: 2em;
@@ -99,55 +93,6 @@ h6 {
         align-self: center;
         width: 30rem;
         margin: 1rem; } }
-  .logo__last {
-    transform: translateX(100%);
-    opacity: 0;
-    animation-name: name-last;
-    animation-delay: 2s;
-    animation-duration: .9s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out; }
-    @media only screen and (max-width: 75em) {
-      .logo__last {
-        align-self: center;
-        width: 23em;
-        margin: 1rem; } }
-    @media only screen and (max-width: 75em) {
-      .logo__last {
-        align-self: center;
-        width: 43rem;
-        margin: 1rem; } }
-    @media only screen and (max-width: 62.5em) {
-      .logo__last {
-        align-self: center;
-        width: 43rem;
-        margin: 1rem; } }
-    @media only screen and (max-width: 50em) {
-      .logo__last {
-        align-self: center;
-        width: 33rem;
-        margin: 1rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .logo__last {
-        align-self: center;
-        width: 33rem;
-        margin: 1rem; } }
-
-@keyframes name-first {
-  from {
-    transform: translateX(-100%);
-    opacity: 0; }
-  to {
-    transform: translateX(0%);
-    opacity: 1; } }
-
-@keyframes name-last {
-  from {
-    transform: translateX(100%);
-    opacity: 0; }
-  to {
-    transform: translateX(0%);
-    opacity: 1; } }
   .logo__center {
     display: flex;
     flex-direction: column;
