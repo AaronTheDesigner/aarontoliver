@@ -49,7 +49,15 @@ const Header = () => {
                             <path class="logo logo__center--main--3" stroke="white" d="M174.323 199.396H218.426L238.391 239.029H193.99L174.323 199.396Z" fill="#BE9F7D" />
                             <path class="logo logo__center--main--4" stroke="white" d="M174.323 199.396H218.426L238.391 239.029H193.99L174.323 199.396Z" fill="#77A7B6" />
                         </svg>
+
+                        <h6 className="name__pro">WEB DEVELOPER</h6>
                     </div>
+                </div>
+
+                <div className="name">
+                    <h4 className="name__first">AARON</h4>
+                    <h4 className="name__last">TOLIVER</h4>
+
                 </div>
 
                 <div className="soon">

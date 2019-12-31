@@ -20,4 +20,26 @@
             font-size: 90%;
         }
     }
+    .name {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+
+        display: flex;
+
+        &__first {
+            margin: 1rem;
+            color: $color-brown-primary;
+            justify-self: stretch;
+        }
+
+        &__last {
+            margin: 1rem;
+            color: $color-red-primary;
+            justify-self: stretch;
+        }
+
+        &__pro {
+            color: $color-blue-primary;
+        }
+    }
 }
