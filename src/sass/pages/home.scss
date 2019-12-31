@@ -2,7 +2,7 @@
     height: 100vh;
     background-color: $color-bg-grey;
     display: grid;
-    grid-template-rows: 100px 320px 400px 1fr;
+    grid-template-rows: 150px 320px 400px 1fr;
     grid-template-columns: 1fr 1100px 1fr; 
 
     @media only screen and (max-width: $bp-largest) {
@@ -49,6 +49,10 @@
 
         &__pro {
             color: $color-blue-primary;
+        }
+
+        @media only screen and (max-width: 37.5em) {
+            font-size: 160%;
         }
     }
 }

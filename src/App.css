@@ -65,44 +65,10 @@ h6 {
   @media only screen and (max-width: 75em) {
     .logo {
       align-content: space-around; } }
-  .logo__first {
-    transform: translateX(-100%);
-    opacity: 0;
-    animation-name: name-first;
-    animation-delay: 2s;
-    animation-duration: .9s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out; }
-    @media only screen and (max-width: 75em) {
-      .logo__first {
-        align-self: center;
-        width: 40rem;
-        margin: 1rem; } }
-    @media only screen and (max-width: 62.5em) {
-      .logo__first {
-        align-self: center;
-        width: 40rem;
-        margin: 1rem; } }
-    @media only screen and (max-width: 50em) {
-      .logo__first {
-        align-self: center;
-        width: 30rem;
-        margin: 1rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .logo__first {
-        align-self: center;
-        width: 30rem;
-        margin: 1rem; } }
   .logo__center {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
-    @media only screen and (max-width: 62.5em) {
-      .logo__center {
-        width: 20rem; } }
-    @media only screen and (max-width: 50em) {
-      .logo__center {
-        width: 20rem; } }
     .logo__center--main {
       margin: 19.5px;
       stroke-dasharray: 1000;
@@ -114,7 +80,7 @@ h6 {
       animation-timing-function: ease-out; }
       @media only screen and (max-width: 75em) {
         .logo__center--main {
-          height: 20rem; } }
+          height: 35rem; } }
       .logo__center--main--1 {
         stroke: #AB5050;
         fill: transparent;
@@ -198,7 +164,7 @@ h6 {
   height: 100vh;
   background-color: #DDDDDD;
   display: grid;
-  grid-template-rows: 100px 320px 400px 1fr;
+  grid-template-rows: 150px 320px 400px 1fr;
   grid-template-columns: 1fr 1100px 1fr; }
   @media only screen and (max-width: 75em) {
     .section-header {
@@ -233,3 +199,6 @@ h6 {
       align-self: start; }
     .section-header .name__pro {
       color: #5F8895; }
+    @media only screen and (max-width: 37.5em) {
+      .section-header .name {
+        font-size: 160%; } }
