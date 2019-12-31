@@ -25,17 +25,26 @@
         grid-column: 2 / 3;
 
         display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        &-container {
+            display: flex;
+        }
 
         &__first {
             margin: 1rem;
             color: $color-brown-primary;
             justify-self: stretch;
+            align-self: start;
         }
 
         &__last {
             margin: 1rem;
             color: $color-red-primary;
             justify-self: stretch;
+            align-self: start;
         }
 
         &__pro {

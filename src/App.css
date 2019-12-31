@@ -215,14 +215,21 @@ h6 {
   .section-header .name {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
-    display: flex; }
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end; }
+    .section-header .name-container {
+      display: flex; }
     .section-header .name__first {
       margin: 1rem;
       color: #BE9F7D;
-      justify-self: stretch; }
+      justify-self: stretch;
+      align-self: start; }
     .section-header .name__last {
       margin: 1rem;
       color: #AB5050;
-      justify-self: stretch; }
+      justify-self: stretch;
+      align-self: start; }
     .section-header .name__pro {
       color: #5F8895; }
